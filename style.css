@@ -5,6 +5,7 @@ body {
 .container {
   max-width: 1400px;
   margin: 0 auto;
+  background-color: #56566d;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
@@ -38,4 +39,34 @@ header a {
   text-decoration: none;
   letter-spacing: 3px;
   margin-top: 30px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  padding: 100px 0;
+}
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main {
+  background-color: aliceblue;
+}
+main h2 {
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-indent: 15px;
+}
+.image-responsive {
+  width: 100%;
+  padding: 60px 0;
+  opacity: 0.9;
 }
