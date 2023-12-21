@@ -1,11 +1,11 @@
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #56566d;
+  background-color: #616178;
 }
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  background-color: #56566d;
+ 
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
@@ -15,6 +15,7 @@ header {
   color: white;
   text-align: center;
   padding: 260px 0;
+  
 }
 header h1 {
   font-size: 100px;
@@ -43,30 +44,78 @@ header a {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  padding: 100px 0;
+  gap: 40px;
+  padding: 200px 100px;
 }
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
+  padding: 100px;
+}
+section.secondary {
+  background-color: #e2a07c;
+}
+.secondary h2 {
+  padding: 30px;
+  font-size: 28px;
 }
 main {
-  background-color: aliceblue;
+  background-color: whitesmoke;
 }
 main h2 {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 26px;
   letter-spacing: 3px;
+  margin: 0;
+  text-align: center;
 }
 main p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   text-indent: 15px;
+  margin: 5px;
 }
 .image-responsive {
-  width: 100%;
-  padding: 60px 0;
+  max-width: 100%;
   opacity: 0.9;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.card {
+  background-color: white;
+  margin: 10px 10px;
+  padding: 12px;
+  font-size: 20px;
+  color: #272730;
+}
+.card h4 {
+  text-align: center;
+  font-weight: 700;
+  font-size: larger;
+}
+.card a {
+  padding: 15px;
+  border: 1px solid;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #616178;
+  color: aliceblue;
+}
+
+.card span {
+  line-height: 1.5;
+  font-family: "Poppins";
+  font-size: 18px;
+}
+.card h5 {
+  font-weight: 600;
+  font-size: 15px;
 }
