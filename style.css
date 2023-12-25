@@ -13,7 +13,7 @@ header {
   background-size: cover;
   color: white;
   text-align: center;
-  padding: 260px 0;
+  padding: 290px 0;
 }
 header h1 {
   font-size: 100px;
@@ -60,7 +60,7 @@ section {
   padding: 100px;
 }
 section.secondary {
-  background-color: #e2a07c;
+  background-color: #e6bea8;
 }
 .secondary h2 {
   padding: 30px;
@@ -95,18 +95,20 @@ main p {
 
 .card {
   background-color: white;
-  margin: 10px 10px;
   padding: 12px;
   font-size: 18px;
   color: #272730;
+  border-radius: 5px;
+ 
 }
 .card h4 {
   text-align: center;
-  font-weight: 700;
-  font-size: larger;
+  font-weight: 800;
+  font-size: 24px;
+  letter-spacing: 2px;
 }
 .card a {
-  padding: 7px;
+  padding: 10px;
   border: 1px solid;
   display: block;
   text-align: center;
@@ -115,15 +117,23 @@ main p {
   background-color: #616178;
   color: aliceblue;
 }
-
-.card span {
-  line-height: 1.3;
-  font-family: "Poppins";
-  font-size: 15px;
+.card a:hover{
+  background-color: lightgray;
+  color:  #616178;
 }
+.card span {
+  font-family: "Poppins";
+  font-size: 17px;
+  padding: 5px;
+}
+
 .card h5 {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
+  opacity: 0.6;
+}
+section.third {
+  background-color: rgb(213, 238, 238);
 }
 .third h2 {
   text-align: center;
@@ -132,13 +142,57 @@ main p {
 }
 .third h5 {
   text-align: center;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 .grid-3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 30px;
+  row-gap: 50px;
 }
 hr {
+  margin: 0;
   opacity: 0.2;
+  margin-bottom: 18px;
+}
+.grid-3 .card span {
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 10px 8px;
+  
+}
+.grid-3 .card a {
+  margin-top: 15px;
+  background-color: lightgray;
+  color: #4c4c58;
+  padding: 5px 5px;
+
+
+}
+.grid-3 .card a:hover {
+  background-color: #616178;
+  color: white
+}
+
+@media (max-width: 800px) {
+  header h1 {
+    font-size: 50px;
+  }
+  header h2 {
+    font-size: 25px;
+  }
+  header h3 {
+    font-size: 15px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 70px;
+  }
+  .grid-2 {
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+  }
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
 }
