@@ -6,6 +6,24 @@ body {
   max-width: 1300px;
   margin: 0 auto;
 }
+div.scrollmenu {
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+}
+
+div.scrollmenu a {
+  text-decoration: none;
+  padding: 22px;
+  color: rgb(24, 170, 170);
+  font-size: 20px;
+}
+
+div.scrollmenu a:hover {
+  background-color: #262424;
+  color: azure;
+  border-radius: 10px;
+}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
     url("images/bg.jpg");
@@ -99,7 +117,6 @@ main p {
   font-size: 18px;
   color: #272730;
   border-radius: 5px;
- 
 }
 .card h4 {
   text-align: center;
@@ -117,9 +134,9 @@ main p {
   background-color: #616178;
   color: aliceblue;
 }
-.card a:hover{
+.card a:hover {
   background-color: lightgray;
-  color:  #616178;
+  color: #616178;
 }
 .card span {
   font-family: "Poppins";
@@ -159,19 +176,75 @@ hr {
   font-size: 16px;
   margin-top: 10px;
   padding: 10px 8px;
-  
 }
 .grid-3 .card a {
   margin-top: 15px;
   background-color: lightgray;
   color: #4c4c58;
   padding: 5px 5px;
-
-
 }
 .grid-3 .card a:hover {
   background-color: #616178;
-  color: white
+  color: white;
+}
+section.forth {
+  background-color: rgb(225, 202, 202);
+}
+.grid-deals {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 20px;
+  padding-top: 60px;
+}
+.forth h2 {
+  padding: 20px;
+  font-size: 28px;
+  font-weight: 700;
+}
+.grid-deals h3 {
+  font-weight: 700;
+  margin: 10px;
+}
+img {
+  border-radius: 5px;
+}
+
+.grid-deals .card {
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.grid-deals a {
+  margin: 5px 0;
+}
+footer {
+  padding: 40px;
+  opacity: 0.9;
+}
+
+footer h4 {
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  color: lightgray;
+  letter-spacing: 4px;
+}
+footer h4 a {
+  color: lightgrey;
+  text-decoration: none;
+}
+footer h4 a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+footer h2 {
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 4px;
+  color: azure;
+  margin: 40px;
 }
 
 @media (max-width: 800px) {
