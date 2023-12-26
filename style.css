@@ -5,17 +5,20 @@ body {
 .container {
   max-width: 1300px;
   margin: 0 auto;
+  position: relative;
 }
 div.scrollmenu {
   display: flex;
   position: absolute;
-  justify-content: space-around;
+  justify-content: flex-end;
+  right: 0;
+ 
 }
 
 div.scrollmenu a {
   text-decoration: none;
   padding: 22px;
-  color: rgb(158, 147, 230);
+  color: rgb(186, 179, 225);
   font-size: 20px;
 }
 
