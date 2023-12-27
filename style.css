@@ -12,7 +12,6 @@ div.scrollmenu {
   position: absolute;
   justify-content: flex-end;
   right: 0;
- 
 }
 
 div.scrollmenu a {
@@ -26,6 +25,7 @@ div.scrollmenu a:hover {
   background-color: #262424;
   color: azure;
   border-radius: 10px;
+  cursor: pointer;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
@@ -140,6 +140,7 @@ main p {
 .card a:hover {
   background-color: lightgray;
   color: #616178;
+  cursor: pointer;
 }
 .card span {
   font-family: "Poppins";
@@ -153,7 +154,7 @@ main p {
   opacity: 0.6;
 }
 section.third {
-  background-color: rgb(213, 238, 238);
+  background-color: rgb(199, 233, 233);
 }
 .third h2 {
   text-align: center;
@@ -180,6 +181,12 @@ hr {
   margin-top: 10px;
   padding: 10px 8px;
 }
+.grid-3 .card {
+  transition: transform 0.3s ease-in-out;
+}
+.grid-3 .card:hover  {
+  transform: scale(1.2);
+}
 .grid-3 .card a {
   margin-top: 15px;
   background-color: lightgray;
@@ -189,6 +196,7 @@ hr {
 .grid-3 .card a:hover {
   background-color: #616178;
   color: white;
+  cursor: pointer;
 }
 section.forth {
   background-color: rgb(225, 202, 202);
@@ -196,7 +204,7 @@ section.forth {
 .grid-deals {
   display: grid;
   grid-template-columns: repeat(2, minmax(200px, 1fr));
-  gap: 20px;
+  gap: 40px;
   padding-top: 60px;
 }
 .forth h2 {
@@ -206,7 +214,7 @@ section.forth {
 }
 .grid-deals h3 {
   font-weight: 700;
-  margin: 10px;
+  letter-spacing: 3px;
 }
 img {
   border-radius: 5px;
@@ -214,12 +222,12 @@ img {
 
 .grid-deals .card {
   text-align: center;
-  padding: 8px;
+  padding: 20px 30px;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
 .grid-deals a {
-  margin: 5px 0;
+  margin: 20px 0;
 }
 footer {
   padding: 40px;
@@ -240,6 +248,7 @@ footer h4 a {
 footer h4 a:hover {
   color: grey;
   text-decoration: none;
+  cursor: pointer;
 }
 
 footer h2 {
