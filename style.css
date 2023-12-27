@@ -8,7 +8,7 @@ body {
   position: relative;
 }
 
- div.scrollmenu {
+div.scrollmenu {
   display: flex;
   position: absolute;
   justify-content: flex-end;
@@ -20,7 +20,7 @@ div.scrollmenu a {
   padding: 22px;
   color: rgb(186, 179, 225);
   font-size: 20px;
-} 
+}
 
 div.scrollmenu a:hover {
   background-color: #262424;
@@ -185,7 +185,7 @@ hr {
 .grid-3 .card {
   transition: transform 0.3s ease-in-out;
 }
-.grid-3 .card:hover  {
+.grid-3 .card:hover {
   transform: scale(1.2);
 }
 .grid-3 .card a {
@@ -239,10 +239,9 @@ img {
   color: #535363;
   font-size: 20px;
   margin-top: 30px;
-  
 }
 .back-to-home a:hover {
-  color: whitesmoke
+  color: whitesmoke;
 }
 footer {
   padding: 20px;
@@ -274,8 +273,7 @@ footer h2 {
   margin: 40px;
 }
 
-
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   header h1 {
     font-size: 50px;
   }
@@ -294,6 +292,9 @@ footer h2 {
     margin-top: 50px;
   }
   .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .grid-deals {
     grid-template-columns: 1fr;
   }
 }
